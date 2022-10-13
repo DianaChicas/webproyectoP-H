@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&H</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!------------------ HEADER ----------------->
+
+    <header class="header">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="logo fa-brands fa-tencent-weibo"></i></a></li>
+                    <div class="menu-content">
+                        <a class="menu-item"></a>
+                        <a href="#" class="menu-item">inicio</a>
+                        <a href="#" class="menu-item">nuevos productos</a>
+                        <a href="#" class="menu-item">ofertas</a>
+                        <a href="#" class="menu-item">mejor vendidos</a>
+                        <a href="#" class="menu-item">shop</a>
+                        <a href="#" class="menu-item">contacto</a>
+                        <a class="menu-item"></a>
+                        <a class="menu-item"></a>
+                        <a class="menu-item"></a>
+                    </div>
+                    <div class="menu-icons">
+                        <div class="quitar-buscador fa-solid fa-xmark"></div>
+                        <div class="buscar-icon fa-solid fa-search"></div>
+                        <div class="user-icon fa-solid fa-user"></div>
+                        <div class="carrito-icon fa-solid fa-shopping-bag"></div>
+                        <div class="menu-icon fa-solid fa-bars"></div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <!------------------ BUSCADOR ----------------->
+
+        <div class="buscador">
+            <label for="">
+                <input type="search" placeholder="buscar" class="buscar">
+            </label>
+        </div>
+
+        <!------------------ INICIO DE SESION ----------------->
+
+        <div class="iniciar-sesion">
+            <div class="form-iniciar-sesion">
+                <h3>iniciar sesion</h3>
+                <form action="">
+                    <input type="text" placeholder="Nombre">
+                    <input type="password" placeholder="Contraseña">
+                    <div>
+                        <button type="submit"><span>iniciar sesión</span></button>
+                        <input type="checkbox" name="recordar" value="recordar">
+                        <label for="recordar"><span>Recordar contraseña</span></label>
+                    </div>
+                    <a href="">¿Olvidaste la contraseña?</a>
+                </form>
+            </div>
+        </div>
+
+        <!------------------ CARRITO DE COMPRAS ----------------->
+
+        <div class="shopping-car">
+
+            <table>
+                <thead>
+                    <h4>cesta de compra</h4>
+                    <tr>
+                        <td>Producto</td>
+                        <td>Cantidad</td>
+                        <td>Precio</td>
+                    </tr>
+                </thead>
+                <tbody class="producto-body">
+                    <tr class="producto-carrito">
+                        <td><img src="assets/2.jpg" alt=""></td>
+                        <td>
+                            <button class="fa-solid fa-minus decrement" id="decrement"></button>
+                            <input value="1" class="cantidad" readonly>
+                            <button class="fa-solid fa-plus increment" id="increment"></button>
+                        </td>
+                        <td>
+                            $<input value="40" class="precio">.00
+                        </td>
+
+                    </tr>
+                    <td>
+                        <div class="fa-solid fa-trash-can eliminar"></div>
+                    </td>
+                </tbody>
+                <tfoot>
+                    <tr class="total-carrito">
+                        <td class="total-producto-carrito">Total:</td>
+                        <td class="total-producto-box">
+                            $<input type="text" value="40" class="total-producto">.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" scope="col"><button class="comprar-producto">Comprar</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </header>
+
+    <!------------------ HOME ----------------->
+
+    <section class="home">
+        <div class="reveal">
+            <div class="banner">
+                <div class="banner-detail">
+                    <h2>Encuentra el Producto Perfecto</h2>
+                    <p>Descubre los beneficios de nuestros productos seleccionados de belleza y cuidado facial.</p>
+                    <a href="#">comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------ PRODUCTOS RECOMENDADOS ----------------->
+
+    <section class="productos" id="1">
+
+        <div class="reveal">
+            <h3>seleccionados para ti</h3>
+
+
+            <div class="productos-recomendados">
+                <button class="btn-left fa-solid fa-chevron-left" id="btn-left"></button>
+                <div class="productos-container">
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/1.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Sérum Retinol</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$50.20</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/2.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Crema Antiarrugas</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$40.00</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/3.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Crema Corporal</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$50.00</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/4.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Contorno de Ojos</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$40.00</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/5.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Sérum Vitamina C</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$50.20</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-trick">
+                        <div class="slide">
+                            <picture>
+                                <img src="assets/6.jpg" alt="">
+                                <div>
+                                    <button class="btn-comprar">Comprar</button>
+                                </div>
+                            </picture>
+                            <div class="details">
+                                <div>
+                                    <h4>Sérum Colágeno</h4>
+                                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+                                    <p>$50.20</p>
+                                </div>
+                                <div class="rating rating-2">
+                                    <i class="star fa-solid fa-star" data-star="5"></i>
+                                    <i class="star fa-solid fa-star" data-star="4"></i>
+                                    <i class="star fa-solid fa-star" data-star="3"></i>
+                                    <i class="star fa-solid fa-star" data-star="2"></i>
+                                    <i class="star fa-solid fa-star" data-star="1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-right fa-solid fa-chevron-right" id="btn-right"></button>
+            </div>
+        </div>
+    </section>
+
+    <!------------------ INFORMACION PRODUCTO ----------------->
+
+
+    <section class="producto-informacion">
+        <div class="reveal">
+            <div class="detail">
+                <div class="informacion">
+                    <h4>Línea Especial con Manzanilla</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a ex soluta sunt! Atque sit
+                        suscipit eaque perspiciatis, nam numquam quae optio corrupti libero quos quibusdam deserunt
+                        veniam molestias sunt!
+                    </p>
+                    <a href="#"><span>Leer Más</span></a>
+                </div>
+                <picture>
+
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------ FOOTER ----------------->
+
+    <div class="footer reveal">
+        <div class="footer-details">
+            <div class="social">
+                <h3 class="text-color-footer">Se Parte de Nuestra Comunidad</h3>
+                <p class="text-color-footer">Enterate primero sobre nuestros nuevos lanzamientos, accede a ofertas
+                    exclusivas y obten hasta un 10% de descuento en tu siguiente pedido.</p>
+                <label>
+                    <input type="email" placeholder="Ingresa tu Correo Electrónico" class="footer-mail"
+                        id="footer-correo">
+                    <a href="#" class="fa-solid fa-envelope social-icon text-color-footer"></a>
+                </label>
+
+                <div class="social-icons">
+                    <a href="#" class="fa-brands fa-facebook social-icon text-color-footer"></a>
+                    <a href="#" class="fa-brands fa-twitter social-icon text-color-footer"></a>
+                    <a href="#" class="fa-brands fa-instagram-square social-icon text-color-footer"></a>
+                    <a href="#" class="fa-brands fa-pinterest social-icon text-color-footer"></a>
+                </div>
+            </div>
+            <div class="informacion">
+                <ul>
+                    <td>
+                        <li><a href="#" class="text-color-footer">FAQs</a></li>
+                        <li><a href="#" class="text-color-footer">Contáctanos</a></li>
+                        <li><a href="#" class="text-color-footer">Envio y Devoluciones</a></li>
+                        <li><a href="#" class="text-color-footer">Política de Reenbolso</a></li>
+                        <li><a href="#" class="text-color-footer">Términos y Condiciones de Membresía</a></li>
+                        <li><a href="#" class="text-color-footer">Términos de Servicio</a></li>
+                    </td>
+                </ul>
+                <td>
+                    <ul>
+                        <li><a href="#" class="text-color-footer">Sobre Nosotros</a></li>
+                        <li><a href="#" class="text-color-footer">Acerca de Nuestras Suscripciones</a></li>
+                        <li><a href="#" class="text-color-footer">Distribuidores</a></li>
+                    </ul>
+                </td>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ JAVASCRIPT ----------------->
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
